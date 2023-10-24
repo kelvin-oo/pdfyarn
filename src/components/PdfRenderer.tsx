@@ -168,9 +168,11 @@ const PdfRenderer = ({ url }: PdfRendererProps) => {
 
       <div className="flex-1 w-full max-h-screen">
         <Document
-         file={url}
+          file={
+            "https://uploadthing-prod.s3.us-west-2.amazonaws.com/0cd53db1-b016-477a-9952-2ba098d6577a-ao6a3b.pdf"
+          }
         >
-         <Page  pageNumber={1}/>
+          <Page pageNumber={1} />
         </Document>
       </div>
     </div>
