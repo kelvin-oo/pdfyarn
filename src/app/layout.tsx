@@ -7,7 +7,7 @@ import "./globals.css";
 import "react-loading-skeleton/dist/skeleton.css";
 // import "simplebar-react/dist/simplebar.min.css";
 
-// import { Toaster } from "@/components/ui/toaster";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,7 +27,7 @@ export default function RootLayout({
             inter.className
           )}
         >
-          {/* <Toaster /> */}
+          <Toaster />
           <Navbar />
           {children}
         </body>
